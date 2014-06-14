@@ -26,3 +26,6 @@ Version 0.0.1:
 Version 0.0.2:
   Vectors,
   Unit Vectors
+
+Version 0.0.3:
+  Vector Math
