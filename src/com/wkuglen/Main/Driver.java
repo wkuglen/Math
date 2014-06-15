@@ -3,6 +3,8 @@ package com.wkuglen.Main;
 import com.wkuglen.Angles.Degree;
 import com.wkuglen.Angles.Radian;
 import com.wkuglen.Angles.Angle;
+import com.wkuglen.Cartesian3D.Point3D;
+import com.wkuglen.Cartesian3D.Vector3D;
 import com.wkuglen.Vectors.UnitVector;
 import com.wkuglen.Vectors.Vector;
 
@@ -47,6 +49,23 @@ public class Driver {
         System.out.println("The three vectors:"+"\n v "+v.toIJ() + "\n u "+u.toIJ() + "\n w "+w.toIJ());
         System.out.println("Dot Product of u and v: "+v.dotProduct(u));
         System.out.println("Angle Between v and u: "+v.angleBetween(u));
+
+        //===3D Systems===
+        System.out.println("===3D Systems===");
+        Vector3D v3D = new Vector3D(1.0,1.0,1.0);
+        Vector3D scaled3D = v3D.scalar(2.0);
+        Point3D point = new Point3D(4.0,4.0,4.0);
+        Vector3D u3D = new Vector3D(point);
+
+        System.out.println(v3D);
+        System.out.println(scaled3D);
+        System.out.println(u3D);
+
+        point.setX(3.0);
+        point.setY(3.0);
+        point.setZ(3.0);
+        System.out.println(v3D.toIJK());
+        System.out.println(u3D.toIJK());
 
 
     }
