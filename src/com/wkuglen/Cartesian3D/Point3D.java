@@ -54,6 +54,6 @@ public class Point3D {
 
     @Override
     public String toString() {
-        return "Point3D(x,y,z): " + "("+x+","+y+","+z+")";
+        return "Point3D: " + "("+x+","+y+","+z+")";
     }
 }
