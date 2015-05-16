@@ -5,6 +5,7 @@ import com.wkuglen.Angles.Radian;
 import com.wkuglen.Angles.Angle;
 import com.wkuglen.Cartesian3D.Point3D;
 import com.wkuglen.Cartesian3D.Vector3D;
+import com.wkuglen.Equations.EulerMethod;
 import com.wkuglen.Vectors.UnitVector;
 import com.wkuglen.Vectors.Vector;
 
@@ -16,6 +17,11 @@ public class Driver {
     public static void main(String[] args)
     {
 	// write your code here
+        //===Equations===
+        System.out.println("===Testing Euler's Method===");
+        System.out.println(
+                EulerMethod.printPoints(1,8,0.5,9,0.2,-0.3,0.3)
+        );
         //===angles===
         System.out.println("===Testing Angles===");
         Degree d = new Degree(30.00);
